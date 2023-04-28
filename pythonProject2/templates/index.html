@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{ background-color: papayawhip;}
+        body {
+            margin:100px 0px; padding:0px;
+            text-align:center;
+        }
+        label,input {
+            display: block;
+            float: center;
+        }
+        label {text-align:left; }
+        br {
+            clear: left;
+        }
+        #submit{
+        padding-bottom: 5px;
+        }
+.main {
+    margin: auto;
+    width: 50%;
+    border: 2px solid grey;
+    padding: 10px;
+}
+    </style>
+    <title>SSA</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dump Slope Stability Assessment Tool </h1>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+            <form method="get">
+                <label for="Den">Density :</label>
+                <input type="number" id="Den" name="Den" step=".01" class="geom">
+                <label for="Co">Cohesion:</label>
+                <input type="number" id="Co" name="Co"step=".01" class="geom">
+                <label for="Iaf">Friction angle:</label>
+                <input type="number" id="Iaf" name="Iaf" step=".01" class="geom"><br>
+
+                <label for="Odh">Overall dump height :</label>
+                <input type="number" id="Odh" name="Odh" step=".01" class="geot">
+                <label for="Dsa">Overall dump height :</label>
+                <input type="number" id="Dsa" name="Dsa" step=".01" class="geot"><br><br>
+                <br>
+                <input type="submit" name="submit" id="submit" value="submit" class="button" />
+            </form>
+
+        </div>
+    </section>
+</body>
+</html>
