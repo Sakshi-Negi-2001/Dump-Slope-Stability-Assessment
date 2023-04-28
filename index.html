@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>SSA</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dump Slope Stability Assessment Tool </h1>
+        </div>
+    </header>
+    <section class="tool">
+        <div class="tool-form">
+            <form action="get">
+                <div class="parameters">
+                    <h4>Geometric Parameters</h4>
+                    <br>
+                    <label for="Den">Density (kg/m3)</label>
+                    <input type="number" id="Den" name="Den" step=".01" class="geom">
+                    <label for="Co">Cohesion (kPa)</label>
+                    <input type="number" id="Co" name="Co"step=".01" class="geom">
+                    <label for="Iaf">Friction angle (phi)</label>
+                    <input type="number" id="Iaf" name="Iaf" step=".01" class="geom"><br> <br>
+                </div>
+                
+                <div class="parameters">
+                    <h4>Geotechnical Parameters</h4>
+                    <br>
+                    <label for="Odh">Overall dump height (m)</label>
+                    <input type="number" id="Odh" name="Odh" step=".01" class="geot">
+                    <label for="Dsa">Overall dump height (degree)</label>
+                    <input type="number" id="Dsa" name="Dsa" step=".01" class="geot"><br>
+                </div>  
+                <label for="Dsa">FOS(Factor of Safety)</label>
+                <input type="number" id="Dsa" name="Dsa" step=".01"> <br><br>              
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
