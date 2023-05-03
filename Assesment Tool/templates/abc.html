@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SSA</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dump Slope Stability Assessment Tool </h1>
+        </div>
+    </header>
+    <section class="tool">
+        <div class="tool-form">
+            <form  action ="{{url_for('predict')}}" method="POST">
+                <div class="parameters">
+                    <h4>Geometric Parameters</h4>
+                    <br>
+                    <label for="Density">Density (kg/m)</label>
+                    <input type="number" id="Density" name="Density" step=".01" class="geom">
+                    <label for="Cohesion">Cohesion (kPa)</label>
+                    <input type="number" id="Cohesion" name="Cohesion" step=".01" class="geom">
+                    <label for="Friction_Angle">Friction angle (phi)</label>
+                    <input type="number" id="Friction_Angle" name="Friction_Angle" step=".01" class="geom"><br> <br>
+                </div>
+
+                <div class="parameters">
+                    <h4>Geotechnical Parameters</h4>
+                    <br>
+                    <label for="Overall_Dump_Height">Overall dump height (m)</label>
+                    <input type="number" id="Overall_Dump_Height" name="Overall_Dump_Height" step=".01" class="geot">
+                    <label for="Dump_Angle">Overall dump height (degree)</label>
+                    <input type="number" id="Dump_Angle" name="Dump_Angle" step=".01" class="geot"><br>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <br> <br>
+            </form>
+            <br><br>
+            <p>{{ FOS_value }}</p>
+        </div>
+    </section>
+</body>
+</html>
