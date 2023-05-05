@@ -13,6 +13,7 @@ def home():
 
 @app.route('/predict/', methods=['POST'])
 def predict():
+    global model
     Density = float(request.form["Density"])
     CO = float(request.form["Cohesion"])
     FA = float(request.form["Friction_Angle"])
