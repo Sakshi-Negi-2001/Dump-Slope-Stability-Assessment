@@ -28,7 +28,7 @@ Compare the result of each model with the validation set received by industry le
 ![image](https://user-images.githubusercontent.com/77374152/236752441-a34f6c41-7d57-4ef4-bd98-8b56a8ce26e7.png)
 
 
-## Image of Tool Tool 
+## Image of Assesment Tool 
 ![image](https://user-images.githubusercontent.com/77374152/236752127-687b4720-174d-41a4-bdd8-e148f95ecee8.png)
 
 ## Refrences
