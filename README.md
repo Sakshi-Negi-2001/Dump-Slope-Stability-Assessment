@@ -35,3 +35,9 @@ Compare the result of each model with the validation set received by industry le
 [1] Lin S, Zheng H, Han C, Han B, Li W. Evaluation and prediction of slope stability using machine learning approaches. Front Struct Civ Eng 2021;15:821–33. https://doi.org/10.1007/S11709-021-0742-8/METRICS
 
 [2] Karir D, Ray A, Kumar Bharati A, Chaturvedi U, Rai R, Khandelwal M. Stability prediction of a natural and man-made slope using various machine learning algorithms. Transp Geotech 2022;34:100745. https://doi.org/10.1016/j.trgeo.2022.100745
+
+<hr>
+## License 
+
+[MIT LICENSE][LICENSE]
+
