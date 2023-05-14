@@ -39,5 +39,5 @@ Compare the result of each model with the validation set received by industry le
 <hr>
 ## License 
 
-[MIT LICENSE][LICENSE]
+[MIT License](LICENSE)
 
