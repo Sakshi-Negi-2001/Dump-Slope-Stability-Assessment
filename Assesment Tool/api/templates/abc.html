@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>SSA</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Dump Slope Stability Assessment Tool </h1>
+        </div>
+    </header>
+    <section class="tool">
+        <div class="tool-form">
+            <form  action ="{{url_for('predict')}}" method="POST">
+                <div class="parameters">
+                    <h4>Geometric Parameters</h4>
+                    <br>
+                    <label for="Density">Density (kg/m)</label>
+                    <input type="number" id="Density" name="Density" step=".01" class="geom">
+                    <label for="Cohesion">Cohesion (kPa)</label>
+                    <input type="number" id="Cohesion" name="Cohesion" step=".01" class="geom">
+                    <label for="Friction_Angle">Friction angle (phi)</label>
+                    <input type="number" id="Friction_Angle" name="Friction_Angle" step=".01" class="geom"><br> 
+                </div>
+
+                <div class="parameters">
+                    <h4>Geotechnical Parameters</h4>
+                    <br>
+                    <label for="Overall_Dump_Height">Overall dump height (m)</label>
+                    <input type="number" id="Overall_Dump_Height" name="Overall_Dump_Height" step=".01" class="geot">
+                    <label for="Dump_Angle">Overall dump height (degree)</label>
+                    <input type="number" id="Dump_Angle" name="Dump_Angle" step=".01" class="geot"><br>
+                </div>
+                <p class="result">{{ FOS_value }}</p> <br><br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <br>
+            </form>
+        </div>        
+    </section>
+    <p> Link to the dataset :<a href="https://github.com/joy-i/Dump-Slope-Stability-Assessment/blob/main/Assesment%20Tool/Static5.csv" target="_blank"> Static Loading Dataset</a></p>
+    <p> For the code refer to the github repository <a href="https://github.com/joy-i/Dump-Slope-Stability-Assessment" target="_blank"> Dump-Slope-Stability-Assessment</a></p>
+</body>
+</html>
